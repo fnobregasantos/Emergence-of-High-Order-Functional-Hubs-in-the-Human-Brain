@@ -9,7 +9,7 @@ output: spreadsheet with multiple high order connectivity metrics for all combin
 ## Step 1: Block of code by Guillaume and:
 ## Step 2: Code by Pierre Baudot.
 
-# Organized spreadsheet with everything. 
+The final result is a pandas DataFrame with everything. 
 
 # Code Block 2: Computation of High-Order Hubs
 
