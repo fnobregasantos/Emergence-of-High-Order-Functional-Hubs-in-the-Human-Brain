@@ -1,10 +1,14 @@
 # Emergence-of-High-Order-Hubs-in-the-Human-Connectome
 This repository has the relevant codes associated with the manuscript: Emergence of High Order Hubs in the Human Connectome
 
+## Data - The current version has HCP time series data - that should be excluded in the end.
+
 ## Code Block 1: High Order connectivity from timeseries
 
 input: rs-fMRI time series.
 output: spreadsheet with multiple high order connectivity metrics for all combinations of metrics.
+
+We are going to do for the whole cohort, but later we should do it for one timeseries only. 
 
 ### Step 1: Block of code by Guillaume and:
 ### Step 2: Code by Pierre Baudot.
