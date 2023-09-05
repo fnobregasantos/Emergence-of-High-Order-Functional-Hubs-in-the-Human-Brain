@@ -1,23 +1,20 @@
 # Emergence-of-High-Order-Hubs-in-the-Human-Connectome
-This repository has the relevant codes associated with the manuscript: Emergence of High Order Hubs in the Human Connectome
+This repository has the relevant codes associated with the manuscript: Emergence of High Order Hubs in the Human Connectome. It gives instructions on how to compute multivariate information theory metrics, and how to analyse it in the context of hypergraphs, and how to visualize it.
 
-## Data - The current version has HCP time series data - that should be excluded in the end.
+## Data - Since HCP data is sensitive, we use a sample timeseries data.
 
 ## Code Block 1: High Order connectivity from timeseries
 
-input: rs-fMRI time series.
-output: spreadsheet with multiple high order connectivity metrics for all combinations of metrics.
+input: Any time series - in this case, we included a rs-fMRI time series.
+output: A csv file with multiple high order connectivity metrics for all similarities metrics discussed in our manuscript.
 
-We are going to do for the whole cohort, but later we should do it for one timeseries only. 
+Notice that those similarity metrics were created combining codes from multiple sources, and for our manuscript we used the codes developed in Guillaume and Pierre, combined int in the infotopo_server.py file.
 
-### Step 1: Block of code by Guillaume and:
-### Step 2: Code by Pierre Baudot.
+That said, the final output is a pandas DataFrame with a column for each Multivariate Metric, namely, Interaction Information, Total Correlation, Oinfo, and Sinfo. 
 
-The final result is a pandas DataFrame with everything. 
+## Code Block 2: Statistical selection of High Order links. 
 
-## Code Block 2: Computation of High-Order Hubs
-
-Inside code: Parallel coding and storage of all 3-point connectivity of every individual. This requires information about time-series and, therefore, will not be accessible on Github.
+We have a folder with the computed High Order connectivity for all subjects. We will use this folder to have a group level measure for the statistical selection of High Order links. We did phase randomization of each timeseries, and computed the same metrics for each subject, which is stored in a different folder. Then we ccompared, at group level, the statistical distribution of the phase randomized triplets vs the original ones.  We selected the hyperlinks that were significant in at least 95% of the subjects.
 
 ### Step 1: Loading all High Order Connectivity
 
