@@ -1,3 +1,56 @@
+
+# Emergence of Higher Order Functional Hubs in the Human Brain
+
+This repository contains supporting materials and code for the manuscript entitled "Emergence of Higher Order Functional Hubs in the Human Brain," submitted to bioarxiv in https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1. The primary goal of this repository is to demonstrate the computational methods used to analyze high-order dependencies in functional brain networks, focusing on resting-state fMRI data, as in our manuscript.
+
+## Introduction
+
+The human brain's ability to form complex networks and functional hubs is a subject of immense research interest. In our manuscript, we delve into the emergence of higher-order functional hubs, exploring their significance and implications in a clinical context. This repository is a comprehensive guide, providing the necessary tools and code to replicate our analyses and further explore the intricacies of high-order functional brain networks.
+
+## Repository Structure
+
+- **CodeBlock1:** Computation of high-order interdependencies using information theory. Scripts from Gillume and Pierre were included and adapted to this repository.
+- **CodeBlock2:** Computation of faith randomized time series. Example scripts and explanation provided.
+- **CodeBlock3:** Analyzing real vs. random triplets in a sample of 100 individuals. Outputs include average CSV files for both real and randomized data.
+- **CodeBlock4:** Network metrics computation and data visualization using provided Data vis code.
+- **CodeBlock5:** ClinicalApplication: Correlation analysis between zscores of triplets build from interaction information and gait speed, highlighting the potential of clinical applications of our pipeline.
+
+Each folder contains detailed instructions and scripts necessary for the respective analyses.
+
+## Data Privacy and Ethics
+
+In compliance with the privacy rules of the Human Connectome Project, we cannot publish the computations on individual time series. Therefore, the computations were conducted on anonymized data samples. Additionally, white noise has been added to the anonymous sample to ensure individual privacy. The provided data and results are thus representative but de-identified.
+
+## Requirements
+
+- List of software, libraries, and versions used.
+- Installation instructions or setup requirements.
+
+## Usage
+
+Detailed instructions on using each code block are provided within the respective folders. It is crucial to follow these instructions for accurate replication of the results.
+
+## Contributing
+
+We welcome contributions and suggestions to improve the code and analyses. Please read through our contribution guidelines before making any changes.
+
+## Citation
+
+If you use the code or data from this repository, please cite our manuscript:
+
+[Manuscript Title, Authors, Journal, Year]
+
+## License
+
+This project is licensed under the [License Name] - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Mention collaborators, funding agencies, or any other support received.
+
+---
+
+
 # Emergence-of-High-Order-Hubs-in-the-Human-Connectome
 This repository has the relevant codes associated with the manuscript: Emergence of High Order Hubs in the Human Connectome. It gives instructions on how to compute multivariate information theory metrics, and how to analyse it in the context of hypergraphs, and how to visualize it.
 
