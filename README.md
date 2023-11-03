@@ -10,7 +10,7 @@ The human brain's ability to form complex networks and functional hubs is a subj
 ## Repository Structure
 
 - **CodeBlock1:** Computation of high-order interdependencies using information theory. Scripts from Gillume and Pierre were included and adapted to this repository.
-- **CodeBlock2:** Computation of faith randomized time series. Example scripts and explanation provided.
+- **CodeBlock2:** Computation of phase randomized time series. Example scripts and explanations were provided.
 - **CodeBlock3:** Analyzing real vs. random triplets in a sample of 100 individuals. Outputs include average CSV files for both real and randomized data.
 - **CodeBlock4:** Network metrics computation and data visualization using provided Data vis code.
 - **CodeBlock5:** ClinicalApplication: Correlation analysis between zscores of triplets build from interaction information and gait speed, highlighting the potential of clinical applications of our pipeline.
