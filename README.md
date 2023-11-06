@@ -1,7 +1,11 @@
 
 # Emergence of Higher Order Functional Hubs in the Human Brain
 
-[![Watch the video](https://img.youtube.com/vi/JKRZf95sI5g/hqdefault.jpg)](https://youtu.be/JKRZf95sI5g)
+<p align="center">
+  <a href="https://youtu.be/JKRZf95sI5g">
+    <img src="https://img.youtube.com/vi/JKRZf95sI5g/hqdefault.jpg" alt="Watch the video">
+  </a>
+</p>
 
 This repository contains supporting materials and code for the manuscript entitled "Emergence of Higher Order Functional Hubs in the Human Brain," submitted to bioarxiv in https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1. The primary goal of this repository is to demonstrate the computational methods used to analyze high-order dependencies in functional brain networks, focusing on resting-state fMRI data, as in our manuscript.
 
