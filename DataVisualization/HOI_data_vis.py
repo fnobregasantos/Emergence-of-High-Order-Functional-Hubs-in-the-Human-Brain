@@ -153,8 +153,9 @@ def atlas(selected_atlas_name):
         print(f"Atlas {selected_atlas_name} not found in configuration.")
 
         
-#Choose Atlas before start       
-atlas('AAL92')
+#Choose Atlas before start  
+chosen_atlas='AAL92'
+atlas(chosen_atlas)
 
 # Fetching the configurations for the selected atlas
 #n_rois = atlas_config[selected_atlas]['n_rois']
@@ -185,6 +186,31 @@ Meta_Colors=pd.read_csv(path_sub_net_order_colors,header=None)
 Meta_Colors.columns=['color']
 subcolors=['khaki','red','orange','violet','steelblue','purple','grey']
 
+def get_unique_atlas_colors(atlas_name, atlas_config):
+    """
+    Get a unique list of colors for a specified atlas, preserving the order of first appearance.
+
+    :param atlas_name: The name of the atlas to get colors for.
+    :param atlas_config: Dictionary containing configuration for each atlas.
+    :return: Ordered list of unique colors for the specified atlas.
+    """
+    # Check if the specified atlas exists in the configuration
+    if atlas_name not in atlas_config:
+        raise ValueError(f"Atlas '{atlas_name}' not found in the configuration.")
+
+    # Get the path of the color file for the specified atlas
+    color_file_path = atlas_config[atlas_name]['path_sub_net_order_colors']
+
+    # Read colors from the file and filter out duplicates
+    unique_colors = []
+    with open(color_file_path, 'r') as file:
+        for line in file:
+            color = line.strip()
+            if color not in unique_colors:
+                unique_colors.append(color)
+
+    return unique_colors
+subcolors=get_unique_atlas_colors(chosen_atlas, atlas_config)
 
 ## Create gray shell
 
@@ -1137,7 +1163,7 @@ def degree_3D_sub(Graph, scale=1, node_colors=None, color_prop_name=None, weight
                           line=dict(color='black', width=2), 
                           hoverinfo='none', showlegend=True,name ='Brain Network', opacity=0.3)
 
-    data = [brain_trace,trace2[0],trace2[1],trace2[2],trace2[3],trace2[4],trace2[5],trace2[6],trace3,trace1]
+    data = [brain_trace,trace2[0],trace2[1],trace2[2],trace2[3],trace2[4],trace2[5],trace2[6],trace2[7],trace3,trace1]
     fig = go.Figure(data=data)
     # view
     camera = dict(up=dict(x=0, y=0, z=1), center=dict(x=0, y=0, z=0),
@@ -1877,6 +1903,8 @@ def plotclique3dk_sub(Graph, e, k, t, movie=False):
     coor.append(trace2[4])
     coor.append(trace2[5])
     coor.append(trace2[6])
+    #
+    coor.append(trace2[7])
     
     if skip==False:
         coor.append(tracel)
@@ -1905,7 +1933,7 @@ def plotclique3dk_sub(Graph, e, k, t, movie=False):
         return fig.write_image("temp.svg")
     
 
-def plotho3dk_sub(List, k, t, movie=False):
+def plotho3dk_sub(List, k, t, with_tri=True,movie=False):
     """Creates a 3D plot of the k-cliques in a brain network for a given threshold
     
     Parameters
@@ -2003,6 +2031,10 @@ def plotho3dk_sub(List, k, t, movie=False):
     #            line=dict(color='blue', width=3),
     #            hoverinfo='none'
     #            )
+    if with_tri==False:
+        #del corr
+        coor = []
+    
     coor.append(brain_trace)
     coor.append(trace2[0])
     coor.append(trace2[1])
@@ -2011,6 +2043,8 @@ def plotho3dk_sub(List, k, t, movie=False):
     coor.append(trace2[4])
     coor.append(trace2[5])
     coor.append(trace2[6])
+    #not sure 
+    coor.append(trace2[7])
     if skip==False:
         coor.append(tracel)
     coor.append(trace1)
@@ -2523,7 +2557,7 @@ def plotcurv_sub(Graph, e, movie=False):
     
     if movie == True:
         #return figif movie==True:
-        return fig.write_image("temp.svg")
+        return fig#.write_image("temp.svg")
 
     
 
