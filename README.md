@@ -5,15 +5,15 @@
   <img src="Images/II_Hub_video.gif" alt="Emergence of Higher Order Functional Hubs">
 </p>
 
-This repository contains supporting materials and code for the manuscript entitled "Emergence of Higher Order Functional Hubs in the Human Brain," submitted to bioarxiv in https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1. The primary goal of this repository is to demonstrate the computational methods used to analyze high-order dependencies in functional brain networks, focusing on resting-state fMRI data, as in our manuscript.
+This repository contains supporting materials and code for the manuscript entitled "Emergence of Higher Order Functional Hubs in the Human Brain," submitted to bioarxiv in https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1. The primary goal of this repository is to demonstrate the computational methods used to analyze high-order dependencies in functional brain networks using multivariate information theory, focusing on resting-state fMRI data, as in our manuscript. 
 
 ## Introduction
 
-The human brain's ability to form complex networks and functional hubs is a subject of immense research interest. In our manuscript, we delve into the emergence of higher-order functional hubs, exploring their significance and implications in a clinical context. This repository is a comprehensive guide, providing the necessary tools and code to replicate our analyses and further explore the intricacies of high-order functional brain networks.
+The human brain's ability to form complex networks and functional hubs is a subject of immense research interest. In our manuscript, after building uniform hypergraphs using multivariate information theory metrics, we delve into the emergence of higher-order functional hubs, exploring their significance and potential implications in a clinical context. This repository is a comprehensive guide, providing the necessary tools and code to replicate our analyses and further explore the intricacies of high-order functional brain networks.
 
 ## Repository Structure
 
-- **CodeBlock1:** Computation of high-order interdependencies using information theory. Scripts from Gillume and Pierre were included and adapted to this repository.
+- **CodeBlock1:** Computation of high-order interdependencies using information theory. Scripts from @GuillaumeGirier and @pierrebaudot [INFOTOPO]([https://github.com/johnDoe/awesome-project](https://github.com/pierrebaudot/infotopopy) were included and adapted to this repository.
 - **CodeBlock2:** Computation of phase randomized time series. Example scripts and explanations were provided.
 - **CodeBlock3:** Analyzing real vs. random triplets in a sample of 100 individuals. Outputs include average CSV files for both real and randomized data.
 - **CodeBlock4:** Network metrics computation and data visualization using provided Data vis code.
