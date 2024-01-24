@@ -44,7 +44,7 @@ We welcome contributions and suggestions to improve the code and analyses. Pleas
 
 If you use the code or data from this repository, please cite our manuscript:
 
-[](https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1)
+[Emergence of High-Order Functional Hubs in the Human Brain](https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1)
 
 ## License
 
