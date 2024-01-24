@@ -17,7 +17,7 @@ The human brain's ability to form complex networks and functional hubs is a subj
 . Scripts from [@GuillaumeGirier](https://github.com/GuillaumeGirier) and  [@pierrebaudot](https://github.com/pierrebaudot) [Infotopo](https://github.com/pierrebaudot/infotopopy) were included and adapted to this repository. See also [High-Order-interactions
 ](https://github.com/brincolab/High-Order-interactions) from and 
 [@KGatica](https://github.com/KGatica) and [@rcofre](https://github.com/rcofre).
-- **CodeBlock2:** Computation of phase randomized time series. Example scripts and explanations were provided.
+- **CodeBlock2:**  [Computation of phase randomized time series](/CodeBlock2/Phase%20Randomization.ipynb). Example scripts and explanations were provided.
 - **CodeBlock3:** Analyzing real vs. random triplets in a sample of 100 individuals. Outputs include average CSV files for both real and randomized data.
 - **CodeBlock4:** Network metrics computation and data visualization using provided Data vis code.
 - **CodeBlock5:** ClinicalApplication: Correlation analysis between zscores of triplets build from interaction information and gait speed, highlighting the potential of clinical applications of our pipeline.
