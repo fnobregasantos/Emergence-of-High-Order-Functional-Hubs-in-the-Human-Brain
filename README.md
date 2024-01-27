@@ -13,14 +13,19 @@ The human brain's ability to form complex networks and functional hubs is a subj
 
 ## Repository Structure
 
-- **CodeBlock1:** [Computation of high-order interdependencies using information theory](/CodeBlock1/Code%20Block%201%20-%20Computing%20High%20Order%20Interdependencies%20in%20HCP%20data.ipynb)
-.
+- **CodeBlock1:** [Computation of high-order interdependencies using information theory](/CodeBlock1/Code%20Block%201%20-%20Computing%20High%20Order%20Interdependencies%20in%20HCP%20data.ipynb) .
 
 Scripts from [@GuillaumeGirier](https://github.com/GuillaumeGirier) and  [@pierrebaudot](https://github.com/pierrebaudot) [Infotopo](https://github.com/pierrebaudot/infotopopy) were included and adapted to this repository. See also [High-Order-interactions
 ](https://github.com/brincolab/High-Order-interactions) from and 
-[@KGatica](https://github.com/KGatica) and [@rcofre](https://github.com/rcofre).
-- **CodeBlock2:**  [Computation of phase randomized time series](/CodeBlock2/Phase%20Randomization.ipynb). Example scripts and explanations were provided.
-- **CodeBlock3:** Analyzing real vs. random triplets in a sample of 100 individuals. Outputs include average CSV files for both real and randomized data.
+[@KGatica](https://github.com/KGatica) and [@rcofre](https://github.com/rcofre), from which [@GuillaumeGirier](https://github.com/GuillaumeGirier) are translated to Python.
+
+- **CodeBlock2:**  [Computation of phase randomized time series](/CodeBlock2/Phase%20Randomization.ipynb).
+-
+- Example scripts and explanations were provided for phase randomization of time series, which was used in our work to create surrogate data for our analysis.
+- 
+- **CodeBlock3:** [Analyzing real vs. random triplets in a sample of 100 individuals](/CodeBlock2/Phase%20Randomization.ipynb). 
+-
+- Outputs include average CSV files for real and randomized data, where the High-order Hubs were computed.
 - **CodeBlock4:** Network metrics computation and data visualization using provided Data vis code.
 - **CodeBlock5:** ClinicalApplication: Correlation analysis between zscores of triplets build from interaction information and gait speed, highlighting the potential of clinical applications of our pipeline.
 
