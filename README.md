@@ -20,13 +20,16 @@ Scripts from [@GuillaumeGirier](https://github.com/GuillaumeGirier) and  [@pierr
 [@KGatica](https://github.com/KGatica) and [@rcofre](https://github.com/rcofre), from which [@GuillaumeGirier](https://github.com/GuillaumeGirier) are translated to Python.
 
 - **CodeBlock2:**  [Computation of phase randomized time series](/CodeBlock2/Phase%20Randomization.ipynb).
--
-- Example scripts and explanations were provided for phase randomization of time series, which was used in our work to create surrogate data for our analysis.
-- 
+
+Example scripts and explanations were provided for phase randomization of time series, which was used in our work to create surrogate data for our analysis.
+
 - **CodeBlock3:** [Analyzing real vs. random triplets in a sample of 100 individuals](CodeBlock3/Hyperedge_selection_real_vs_randomized_zscore.ipynb). 
--
-- Outputs include average CSV files for real and randomized data, where the High-order Hubs were computed.
-- **CodeBlock4:** Network metrics computation and data visualization using provided Data vis code.
+
+Outputs include average CSV files for real and randomized data, where the High-order Hubs were computed.
+
+- **CodeBlock4:** [Network metrics computation and data visualization using provided Data vis code](Codeblock4/Computing and Visualizing High-Order Hubs.ipynb).
+
+  
 - **CodeBlock5:** ClinicalApplication: Correlation analysis between zscores of triplets build from interaction information and gait speed, highlighting the potential of clinical applications of our pipeline.
 
 Each folder contains detailed instructions and scripts necessary for the respective analyses.
