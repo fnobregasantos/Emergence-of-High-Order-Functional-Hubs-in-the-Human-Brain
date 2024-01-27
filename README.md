@@ -27,7 +27,7 @@ Example scripts and explanations were provided for phase randomization of time s
 
 Outputs include average CSV files for real and randomized data, where the High-order Hubs were computed.
 
-- **CodeBlock4:** [Network metrics computation and data visualization using provided Data vis code](Codeblock4/Computing and Visualizing High-Order Hubs.ipynb).
+- **CodeBlock4:** [Network metrics computation and data visualization using provided Data vis code](Codeblock4/Computing%20and%20Visualizing%20High-Order%20Hubs.ipynb).
 
   
 - **CodeBlock5:** ClinicalApplication: Correlation analysis between zscores of triplets build from interaction information and gait speed, highlighting the potential of clinical applications of our pipeline.
