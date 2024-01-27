@@ -56,6 +56,19 @@ We welcome contributions and suggestions to improve the code and analyses. Pleas
 If you use the code or data from this repository, please cite our manuscript:
 
 [Emergence of High-Order Functional Hubs in the Human Brain](https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1)
+Here are some of the key papers that this project is based on:
+
+```bibtex
+@article{santos2019topological,
+  title={Topological phase transitions in functional brain networks},
+  author={Santos, Fernando AN and Raposo, Ernesto P and Coutinho-Filho, Maur{\'\i}cio D and Copelli, Mauro and Stam, Cornelis J and Douw, Linda},
+  journal={Physical Review E},
+  volume={100},
+  number={3},
+  pages={032414},
+  year={2019},
+  publisher={APS}
+}
 
 ## License
 
