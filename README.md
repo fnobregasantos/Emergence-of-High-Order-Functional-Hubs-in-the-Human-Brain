@@ -61,7 +61,7 @@ If you use the code or data from this repository, please cite our manuscript:
 
 Here are some of the key papers that this project is based on:
 
-- Santos, F. A., Raposo, E. P., Coutinho-Filho, M. D., Copelli, M., Stam, C. J., & Douw, L. (2019). Topological phase transitions in functional brain networks. Physical Review E, 100(3), 032414. [Read the paper]([https://journals.aps.org/pre/abstract/10.1103/PhysRevE.100.032414]).
+- Santos, F. A., Raposo, E. P., Coutinho-Filho, M. D., Copelli, M., Stam, C. J., & Douw, L. (2019). Topological phase transitions in functional brain networks. Physical Review E, 100(3), 032414. [Read the paper](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.100.032414).
 
 
 
