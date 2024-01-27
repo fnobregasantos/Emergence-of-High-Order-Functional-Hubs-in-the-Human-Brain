@@ -68,7 +68,8 @@ Here are some of the key papers where the data visualisation of this project is 
 
 ## License
 
-This project is licensed under the [License Name] - see the LICENSE file for details.
+This project is licensed under the Creative Commons Attribution 4.0 International License - see the LICENSE file for details.
+
 
 ## Acknowledgments
 
