@@ -23,7 +23,7 @@ Scripts from [@GuillaumeGirier](https://github.com/GuillaumeGirier) and  [@pierr
 -
 - Example scripts and explanations were provided for phase randomization of time series, which was used in our work to create surrogate data for our analysis.
 - 
-- **CodeBlock3:** [Analyzing real vs. random triplets in a sample of 100 individuals](/CodeBlock2/Phase%20Randomization.ipynb). 
+- **CodeBlock3:** [Analyzing real vs. random triplets in a sample of 100 individuals](CodeBlock3/Hyperedge_selection_real_vs_randomized_zscore.ipynb). 
 -
 - Outputs include average CSV files for real and randomized data, where the High-order Hubs were computed.
 - **CodeBlock4:** Network metrics computation and data visualization using provided Data vis code.
