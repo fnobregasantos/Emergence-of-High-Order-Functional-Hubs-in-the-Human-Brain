@@ -5,12 +5,16 @@
     <title>Welcome to My Project</title>
     <style>
         body {
-            text-align: center; /* Centering iframe on the page */
+            text-align: center;
         }
         iframe {
-            width: 80%; /* Adjust width as needed */
-            height: 600px; /* Adjust height as needed */
-            margin-bottom: 20px; /* Space between iframes */
+            width: 80%;
+            height: 600px;
+            margin-bottom: 20px;
+        }
+        .iframe-title {
+            font-size: 1.2em; /* Adjust the font size as needed */
+            margin-bottom: 10px; /* Space between the title and the iframe */
         }
     </style>
 </head>
@@ -18,9 +22,13 @@
     <h1>Welcome to My Project</h1>
     <p>Check out my interactive figures:</p>
 
+    <div class="iframe-title">Figure 1: Red Interdependencies Information</div>
     <iframe src="Hypergraph_red_Int_Info_no_tri_plot.html"></iframe>
+
+    <div class="iframe-title">Figure 2: Total Correlation Plot</div>
     <iframe src="Hypergraph_ind_Tot_Corr_plot.html"></iframe>
+
+    <div class="iframe-title">Figure 3: Reduced Interdependencies Information</div>
     <iframe src="Hypergraph_red_Int_Info_plot.html"></iframe>
 </body>
 </html>
-
