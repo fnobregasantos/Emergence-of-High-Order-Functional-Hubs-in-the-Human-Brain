@@ -42,13 +42,13 @@ In compliance with the privacy rules of the Human Connectome Project, we cannot 
 
 ## Usage and Requirements
 
-# Installation
+### Installation
 
-Before running the project, you need to install the required dependencies. This project uses Python, and its dependencies are listed in `requirements.txt`.
+Before running the project, you need to install the required dependencies. This project uses Python; its dependencies are listed in `requirements.txt`.
 
 To install these dependencies, follow these steps:
 
-1. It's recommended to use a virtual environment to keep dependencies for this project separate from other projects. Create a virtual environment named `hoi_env` using Python's built-in `venv` module (or any other virtual environment manager of your choice):
+1. Using a virtual environment is recommended to keep dependencies for this project separate from other projects. Create a virtual environment named `hoi_env` using Python's built-in `venv` module (or any other virtual environment manager of your choice):
 
     ```bash
     python -m venv hoi_env
@@ -78,10 +78,8 @@ To install these dependencies, follow these steps:
 
     This command will install all the packages listed in `requirements.txt`.
 
+
 Now, you are ready to run the project.
-
-
-Now you are ready to run the project.
 
 ## Usage
 
