@@ -31,6 +31,9 @@ Outputs include average CSV files for real and randomized data, where the High-o
 
 - **CodeBlock4:** [Network metrics computation and data visualization using provided Data vis code](Codeblock4/Computing%20and%20Visualizing%20High-Order%20Hubs.ipynb).
 
+The 3d data visualization of this material was developed based on the [@network_TDA_tutorial](https://<username>.github.io/Handsontutorial/](https://github.com/multinetlab-amsterdam/network_TDA_tutorial) developed at [@multinetlab-amsterdam](https://github.com/<username>/Multlinelab](https://github.com/multinetlab-amsterdam) by myself, together with [@eduardacenteno](https://github.com/multinetlab-amsterdam/network_TDA_tutorial/commits?author=eduardacenteno).
+
+
   
 - **CodeBlock5:** ClinicalApplication: Correlation analysis between zscores of triplets build from interaction information and gait speed, highlighting the potential of clinical applications of our pipeline.
 
