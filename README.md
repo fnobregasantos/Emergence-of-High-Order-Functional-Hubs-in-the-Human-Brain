@@ -104,8 +104,9 @@ Here are some of the key papers where the data visualisation of this project is 
 
 ## License
 
-This project is licensed under the Creative Commons Attribution 4.0 International License - see the LICENSE file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
+The GNU General Public License is a free, copyleft license for software and other kinds of works, which permits the use, distribution, modification, and public performance of works that are licensed under it while ensuring that all derivatives of the work are also available under the same license.
 
 ## Acknowledgments
 
