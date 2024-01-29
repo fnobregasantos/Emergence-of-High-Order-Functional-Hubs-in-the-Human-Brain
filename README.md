@@ -43,21 +43,23 @@ Each folder contains detailed instructions and scripts necessary for the respect
 
 In compliance with the privacy rules of the Human Connectome Project, we cannot publish the computations on individual time series. Therefore, the computations were conducted on anonymized data samples. Additionally, white noise has been added to the anonymous sample to ensure individual privacy. The provided data and results are thus representative but de-identified.
 
-## Redundant Hypergraphs:
+# Redundant Hypergraphs:
 
-# Interaction Information
-
-* Hypergraph
-
-* High-order hub
-
-# Total Correlation
+## Interaction Information
 
 * Hypergraph
 
 * High-order hub
 
-## Synergistic Hypergraphs:
+## Total Correlation
+
+* Hypergraph
+
+* High-order hub
+
+# Synergistic Hypergraphs:
+
+## Interaction Information
 
 * Hypergraph
 
