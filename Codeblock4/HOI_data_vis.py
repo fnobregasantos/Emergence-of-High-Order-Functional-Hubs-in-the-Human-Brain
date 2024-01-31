@@ -1314,6 +1314,9 @@ def Allnodeslistak(Graph, cl, verbose=False):
     DIAGNOSTIC(total)
     
     nor = sum(total)
+    #extra to avoid errors# 30/01/2024
+    #if nor==0:
+    #    nor=1000
     nt = []
     for i in range(0, len(total)):
         nt.append(total[i]/nor)
@@ -1359,6 +1362,9 @@ def Allnodeslistak(Graph, cl, verbose=False):
     #print(temp)
     maxk=max(klist)
     totk=sum(klist)
+    #extra to avoid errors# 30/01/2024
+    #if totk==0:
+    #    totk=1000
     #np.nan_to_num(100*np.array(klist)/maxk)
     # We can do some choices: Here I choose the percentage of all cliques to plot
     final = np.nan_to_num(100*np.array(klist)/totk)
@@ -1427,6 +1433,9 @@ def Allnodeslistak2(Lista, cl, verbose=False):
     DIAGNOSTIC(total)
     
     nor = sum(total)
+    #extra to avoid errors# 30/01/2024
+    #if nor==0:
+    #    nor=1000
     #Changed here
     #if nor==0:
     #    nor=1000
@@ -1475,6 +1484,9 @@ def Allnodeslistak2(Lista, cl, verbose=False):
     #print(temp)
     maxk=max(klist)
     totk=sum(klist)
+    #extra to avoid errors# 30/01/2024
+    #if totk==0:
+    #    tot=1000
     #np.nan_to_num(100*np.array(klist)/maxk)
     # We can do some choices: Here I choose the percentage of all cliques to plot
     final = np.nan_to_num(100*np.array(klist)/totk)
@@ -1712,9 +1724,9 @@ def plotclique3dk(Graph, e, k, t, movie=False):
             
         "We have to pertubate a bit one of the nodes to make a mesh3d object" 
         if len(xk) == k:
-            xk.append((pos3d[temp[i][0]][0]+0.05))
-            yk.append((pos3d[temp[i][0]][1]+0.05))
-            zk.append((pos3d[temp[i][0]][2]+0.05))
+            xk.append((pos3d[temp[i][0]][0]+0.03))
+            yk.append((pos3d[temp[i][0]][1]+0.01))
+            zk.append((pos3d[temp[i][0]][2]+0.02))
             # These are the poligons
             coor.append(go.Mesh3d(x=xk, y=yk, z=zk, alphahull=0.075, opacity=t,
                                   color='blue', hoverinfo='skip', showlegend=False))
@@ -1840,9 +1852,9 @@ def plotclique3dk_sub(Graph, e, k, t, movie=False):
             
         "We have to pertubate a bit one of the nodes to make a mesh3d object" 
         if len(xk) == k:
-            xk.append((pos3d[temp[i][0]][0]+0.05))
-            yk.append((pos3d[temp[i][0]][1]+0.05))
-            zk.append((pos3d[temp[i][0]][2]+0.05))
+            xk.append((pos3d[temp[i][0]][0]+0.01))
+            yk.append((pos3d[temp[i][0]][1]+0.02))
+            zk.append((pos3d[temp[i][0]][2]+0.03))
             # These are the poligons
             coor.append(go.Mesh3d(x=xk, y=yk, z=zk, alphahull=0.075, opacity=t,
                                   color='blue', hoverinfo='skip', showlegend=False))
@@ -1977,11 +1989,11 @@ def plotho3dk_sub(List, k, t, with_tri=True,movie=False):
             yk.append((pos3d[temp[i][j]][1]))
             zk.append((pos3d[temp[i][j]][2]))
             
-        "We have to pertubate a bit the position of the nodes - so that they are not lying in a plane -  to make a mesh3d object" 
+        "We have to pertubate a bit the position of the nodes for k=3 - so that they are not lying in a plane -  to make a mesh3d object" 
         if len(xk) == k:
-            xk.append((pos3d[temp[i][0]][0]+0.05))
-            yk.append((pos3d[temp[i][0]][1]+0.06))
-            zk.append((pos3d[temp[i][0]][2]+0.07))
+            xk.append((pos3d[temp[i][0]][0]+0.01))
+            yk.append((pos3d[temp[i][0]][1]+0.02))
+            zk.append((pos3d[temp[i][0]][2]+0.03))
             # These are the poligons
             coor.append(go.Mesh3d(x=xk, y=yk, z=zk, alphahull=0.075, opacity=t,
                                   color='blue', hoverinfo='skip', showlegend=False))
