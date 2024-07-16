@@ -15,7 +15,7 @@ The human brain's ability to form complex networks and functional hubs is a subj
 
 - **CodeBlock1:** [Computation of high-order interdependencies using information theory](/CodeBlock1/Code%20Block%201%20-%20Computing%20High%20Order%20Interdependencies%20in%20HCP%20data.ipynb) .
 
-This codebook inputs any time series - in this case - we included an rs-fMRI time series and outputs a CSV file with multiple high-order connectivity metrics for all similarities metrics discussed in our manuscript. That said, the final output is a pandas DataFrame with a column for each Multivariate Metric: Interaction Information (we call here a multivariate extension of Mutual Information), Total Correlation, Oinfo, and Sinfo. 
+This codebook inputs any time series - in this case - we included an rs-fMRI time series and outputs a CSV file with multiple high-order connectivity metrics for all similarities metrics discussed in our manuscript. That said, the final output is a pandas DataFrame with five columns: One for each Multivariate Metric: Oinfo, Sinfo, Interaction Information (we call here a multivariate extension of Mutual Information), Total Correlation. The last column refer to the indexs of the computed triplets.  
 
 To do so, scripts from [@GuillaumeGirier](https://github.com/GuillaumeGirier) and  [@pierrebaudot](https://github.com/pierrebaudot) [Infotopo](https://github.com/pierrebaudot/infotopopy) were included and adapted to this repository. See also [High-Order-interactions
 ](https://github.com/brincolab/High-Order-interactions) from and 
