@@ -59,7 +59,7 @@ In compliance with the privacy rules of the Human Connectome Project, we cannot 
 * High-order hub
 
 <p align="center">
-  <img src="path_to_your_gif/high_order_hub_interaction_info.gif" alt="High-order Hub Interaction Information">
+  <img src="Images/rHubMI_d.gif" alt="High-order Hub Interaction Information">
 </p>
 
 ## Total Correlation
