@@ -52,13 +52,29 @@ In compliance with the privacy rules of the Human Connectome Project, we cannot 
 
 * Hypergraph
 
+<p align="center">
+  <img src="path_to_your_gif/hypergraph_interaction_info.gif" alt="Hypergraph Interaction Information">
+</p>
+
 * High-order hub
+
+<p align="center">
+  <img src="Images/rHubMI_d.gif" alt="High-order Hub Interaction Information">
+</p>
 
 ## Total Correlation
 
 * Hypergraph
 
+<p align="center">
+  <img src="path_to_your_gif/hypergraph_total_correlation.gif" alt="Hypergraph Total Correlation">
+</p>
+
 * High-order hub
+
+<p align="center">
+  <img src="path_to_your_gif/high_order_hub_total_correlation.gif" alt="High-order Hub Total Correlation">
+</p>
 
 # Synergistic Hypergraphs:
 
@@ -66,7 +82,16 @@ In compliance with the privacy rules of the Human Connectome Project, we cannot 
 
 * Hypergraph
 
+<p align="center">
+  <img src="path_to_your_gif/hypergraph_synergistic_interaction_info.gif" alt="Hypergraph Synergistic Interaction Information">
+</p>
+
 * High-order Hub
+
+<p align="center">
+  <img src="path_to_your_gif/high_order_hub_synergistic_interaction_info.gif" alt="High-order Hub Synergistic Interaction Information">
+</p>
+
 
 ## Usage and Requirements
 
