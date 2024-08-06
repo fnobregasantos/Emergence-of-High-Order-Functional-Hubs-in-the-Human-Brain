@@ -53,7 +53,7 @@ In compliance with the privacy rules of the Human Connectome Project, we cannot 
 * Hypergraph
 
 <p align="center">
-  <img src="path_to_your_gif/hypergraph_interaction_info.gif" alt="Hypergraph Interaction Information">
+  <img src="Images/rMI_d.gif" alt="Hypergraph Interaction Information">
 </p>
 
 * High-order hub
@@ -67,13 +67,13 @@ In compliance with the privacy rules of the Human Connectome Project, we cannot 
 * Hypergraph
 
 <p align="center">
-  <img src="path_to_your_gif/hypergraph_total_correlation.gif" alt="Hypergraph Total Correlation">
+  <img src="Images/rTC_d.gif" alt="Hypergraph Total Correlation">
 </p>
 
 * High-order hub
 
 <p align="center">
-  <img src="path_to_your_gif/high_order_hub_total_correlation.gif" alt="High-order Hub Total Correlation">
+  <img src="Images/rHubTC_d.gif" alt="High-order Hub Total Correlation">
 </p>
 
 # Synergistic Hypergraphs:
@@ -140,7 +140,8 @@ Detailed instructions on using each code block are provided within the respectiv
 
 ## Contributing
 
-We welcome contributions and suggestions to improve the code and analyses. Please read through our contribution guidelines before making any changes.
+We welcome contributions and suggestions to improve the code and analyses. Please read through our contribution guidelines before making any changes. 
+We welcome contributions and suggestions to improve the code and analyses. This project aims to reproduce the results of our manuscript, but it can also be used to perform other high-order analyses on different datasets.
 
 ## Citation
 
@@ -164,6 +165,8 @@ The GNU General Public License is a free, copyleft license for software and othe
 ## Acknowledgments
 
 - F.A. Santos would like to acknowledge support from Dutch Institute for Emergent Phenomena (DIEP), Institute for Advanced Studies at UvA, Abdus Salam International Centre for Theoretical Physics (ICTP), and Multinetlab (at VUmc) during the development of this repository.
+
+
 
 
 
