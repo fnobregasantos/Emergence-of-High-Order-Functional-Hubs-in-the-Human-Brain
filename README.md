@@ -42,7 +42,7 @@ The 3d data visualization of this material was developed based on the [@network_
 
 This codeblock includes an analysis of high-order triplet data in relation to behavioral and anatomical data from the HCP dataset. Given the restriction for publicating clinical data, the results are presented in an interactive HTML file.
 
-[View the HTML report](CodeBlock6/High_Order_Triplet_Analysis_Behavioral_Relation_HCP.html)
+[View the HTML report](CodeBlock6/Triplet_vs_traits_analysis.md)
 
 Each folder contains detailed instructions and scripts necessary for the respective analyses.
 
