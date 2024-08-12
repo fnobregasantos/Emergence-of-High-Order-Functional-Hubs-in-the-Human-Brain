@@ -38,7 +38,11 @@ The 3d data visualization of this material was developed based on the [@network_
   This code block performs a pairwise analysis of different network centralities using the same dataset as the high-order analysis. We selected a significance level of \(p = 0.05\) for the links, based on the correlation between time series of rs-fMRI BOLD activity, to construct the pairwise connectivity matrix. In this analysis, we computed hubs based on Eigenvector Centrality (EC), Degree Centrality (DC), and Betweenness Centrality (BC). Comparing the results, we observed that only visual areas emerged as hubs in the pairwise analysis, whereas the high-order analysis also identified motor areas as hubs. The high-order analysis provides a clearer and more structured identification of hubs, highlighting specific triangles sharing common areas. Detailed results and further analysis on centralities can be found in this code block.
 
 
-- **CodeBlock6:** ClinicalApplication: Correlation analysis between zscores of triplets build from interaction information and gait speed, highlighting the potential of clinical applications of our pipeline.
+- ### CodeBlock6: High-Order Hubs and relationship with Behavioral and Anatomical Traits
+
+This codeblock includes an analysis of high-order triplet data in relation to behavioral and anatomical data from the HCP dataset. Given the restriction for publicating clinical data, the results are presented in an interactive HTML file.
+
+[View the HTML report](CodeBlock6/High_Order_Triplet_Analysis_Behavioral_Relation_HCP.html)
 
 Each folder contains detailed instructions and scripts necessary for the respective analyses.
 
