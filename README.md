@@ -11,15 +11,17 @@ This repository contains supporting materials and code for the manuscript entitl
 
 The human brain's ability to form complex networks and functional hubs is a subject of immense research interest. In our manuscript, after building uniform hypergraphs using multivariate information theory metrics, we delve into the emergence of higher-order functional hubs, exploring their significance and potential implications in a clinical context. This repository is a comprehensive guide, providing the necessary tools and code to replicate our analyses and further explore high-order functional brain networks, as well as its visualizations.
 
+To do so, we merged scripts from [@GuillaumeGirier](https://github.com/GuillaumeGirier) and  [@pierrebaudot](https://github.com/pierrebaudot). [Infotopo](https://github.com/pierrebaudot/infotopopy) and  scripts for [computing multivariate interdependencies](https://github.com/GuillaumeGirier/High-Order-Interactions-Python) were included and adapted for this repository. See also [High-Order-interactions
+](https://github.com/brincolab/High-Order-interactions) from and 
+[@KGatica](https://github.com/KGatica) and [@rcofre](https://github.com/rcofre), from which [@GuillaumeGirier](https://github.com/GuillaumeGirier) have translated to Python. Also to reach this repo, [@danillodbs16](https://github.com/danillodbs16) contributed to the implementation of high-order eigenvector centralitie, and we also had discussions and feedback on the implementation with [@eduardacenteno](https://github.com/eduardacenteno), [@taabroeders](https://github.com/taabroeders), [@MCEN-BCAM](https://github.com/MCEN-BCAM), and [@multinetlab](https://github.com/multinetlab). 
+
 ## Repository Structure
 
 - **CodeBlock1:** [Computation of high-order interdependencies using information theory](/CodeBlock1/Code%20Block%201%20-%20Computing%20High%20Order%20Interdependencies%20in%20HCP%20data.ipynb).
 
 This codebook inputs any time series - in this case - we included an rs-fMRI time series and outputs a CSV file with multiple high-order connectivity metrics for multiple similarities metrics from multivariate information theory, as discussed in our manuscript. That said, the final output is a pandas DataFrame with five columns: One for each Multivariate Metric: Oinfo, Sinfo, Interaction Information (we call in our notebooks as mutual info, since it is a multivariate extension of Mutual Information), and Total Correlation. The last column refer to the indexs of the computed triplets.  
 
-To do so, we merged scripts from [@GuillaumeGirier](https://github.com/GuillaumeGirier) and  [@pierrebaudot](https://github.com/pierrebaudot) [Infotopo](https://github.com/pierrebaudot/infotopopy) were included and adapted to this repository. See also [High-Order-interactions
-](https://github.com/brincolab/High-Order-interactions) from and 
-[@KGatica](https://github.com/KGatica) and [@rcofre](https://github.com/rcofre), from which [@GuillaumeGirier](https://github.com/GuillaumeGirier) are translated to Python.
+
 
 - **CodeBlock2:**  [Computation of phase randomized time series](/CodeBlock2/Phase%20Randomization.ipynb).
 
@@ -99,7 +101,8 @@ For those interested in exploring the full set of high-order networks, detailed 
   <img src="/Images/sMI_d.gif" alt="Hypergraph Synergistic Interaction Information">
 </p>
 
-
+## Additional Images
+Size constraints prevent us to include other images, but a full guideline on how to visualize higpergraph is on CodeBlock4. 
 
 ## Usage and Requirements
 
