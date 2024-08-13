@@ -35,7 +35,7 @@ Based in the computed high-order interdependencies, this notebook compares rando
 
 The 3d data visualization of this material was developed based on the [@network_TDA_tutorial](https://github.com/multinetlab-amsterdam/network_TDA_tutorial) developed at [@multinetlab-amsterdam](https://github.com/multinetlab-amsterdam) by [@eduardacenteno](https://github.com/eduardacenteno) and [myself](https://github.com/fnobregasantos).
 
-**CodeBlock5:** [Pairwise network analysis and comparison with high-order hubs](Codeblock5/Pairwise_Analysis.ipynb).
+**CodeBlock5:** [Pairwise network analysis and comparison with high-order hubs](/CodeBlock5/Pairwise%20Analysis.ipynb).
 
   This code block performs a pairwise analysis of different network centralities using the same dataset as the high-order analysis. We selected a significance level of \(p = 0.05\) for the links, based on the correlation between time series of rs-fMRI BOLD activity, to construct the pairwise connectivity matrix. In this analysis, we computed hubs based on Eigenvector Centrality (EC), Degree Centrality (DC), and Betweenness Centrality (BC). Comparing the results, we observed that only visual areas emerged as hubs in the pairwise analysis, whereas the high-order analysis also identified motor areas as hubs. The high-order analysis provides a clearer and more structured identification of hubs, highlighting specific triangles sharing common areas. Detailed results and further analysis on centralities can be found in this code block.
 
@@ -48,21 +48,28 @@ This codeblock includes an analysis of high-order triplet data in relation to be
 
 Each folder contains detailed instructions and scripts necessary for the respective analyses.
 
-## Data Privacy and Ethics
+#### Behavoral and Anatomical HCP Data Privacy
 
-In compliance with the privacy rules of the Human Connectome Project, we cannot publish the computations on individual time series. Therefore, the computations were conducted on anonymized data samples. Additionally, white noise has been added to the anonymous sample to ensure individual privacy. The provided data and results are thus representative but de-identified.
+In compliance with the privacy rules of the Human Connectome Project, we cannot publish the individual behavoral and anatomical data. Therefore, we only provided a markdown code with our analysis.
+
+## Visualization of High-Order Hubs
+
+The potential visualizations of high-order hubs are extensive, encompassing a wide range of network structures and interactions identified through our analysis. While it is not feasible to display all possible plots directly in this README, we have selected a few key examples and provided them as GIF animations below to illustrate the kinds of patterns observed.
+
+For those interested in exploring the full set of high-order networks, detailed instructions on how to generate and visualize all possible high-order hubs can be found in **CodeBlock4** of this repository. This codeblock includes comprehensive guidance on plotting these networks, enabling further exploration of the rich connectivity patterns uncovered in our analysis.
+
 
 # Redundant Hypergraphs:
 
 ## Interaction Information
 
-* Hypergraph
+* Hypergraph - animation with 240 frames with the corresponding strongest interaction information as hyperlinks in a hypergraph.
 
 <p align="center">
   <img src="Images/rMI_d.gif" alt="Hypergraph Interaction Information">
 </p>
 
-* High-order hub
+* High-order hub - animation with the corresponding high-order hubs computed from interaction information as hyperlinks in a hypergraph with 1000 hyperedges
 
 <p align="center">
   <img src="Images/rHubMI_d.gif" alt="High-order Hub Interaction Information">
@@ -70,13 +77,13 @@ In compliance with the privacy rules of the Human Connectome Project, we cannot 
 
 ## Total Correlation
 
-* Hypergraph
+* Hypergraph animation with 240 frames with the corresponding strongest total correlation as hyperlinks in a hypergraph.
 
 <p align="center">
   <img src="Images/rTC_d.gif" alt="Hypergraph Total Correlation">
 </p>
 
-* High-order hub
+* High-order hub - animation with the corresponding high-order hubs computed from Total Correlation as hyperlinks in a hypergraph with 1000 hyperedges
 
 <p align="center">
   <img src="Images/rHubTC_d.gif" alt="High-order Hub Total Correlation">
@@ -89,14 +96,9 @@ In compliance with the privacy rules of the Human Connectome Project, we cannot 
 * Hypergraph
 
 <p align="center">
-  <img src="path_to_your_gif/hypergraph_synergistic_interaction_info.gif" alt="Hypergraph Synergistic Interaction Information">
+  <img src="/Images/sMI_d.gif" alt="Hypergraph Synergistic Interaction Information">
 </p>
 
-* High-order Hub
-
-<p align="center">
-  <img src="path_to_your_gif/high_order_hub_synergistic_interaction_info.gif" alt="High-order Hub Synergistic Interaction Information">
-</p>
 
 
 ## Usage and Requirements
