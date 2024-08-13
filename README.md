@@ -5,19 +5,19 @@
   <img src="Images/II_Hub_video.gif" alt="Emergence of Higher Order Functional Hubs">
 </p>
 
-This repository contains supporting materials and code for the manuscript entitled "Emergence of Higher Order Functional Hubs in the Human Brain," submitted to bioarxiv in https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1. The primary goal of this repository is to demonstrate the computational methods used to analyze high-order dependencies in functional brain networks using multivariate information theory, focusing on resting-state fMRI data, as in our manuscript. It gives instructions on how to compute multivariate information theory metrics, analyse them in the context of uniform hypergraphs, and visualize them.
+This repository contains supporting materials and code for the manuscript entitled "Emergence of Higher Order Functional Hubs in the Human Brain," submitted to bioarxiv in https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1. The primary goal of this repository is to demonstrate the computational methods used to analyze high-order dependencies in functional brain networks using multivariate information theory, focusing on resting-state fMRI data, as in our manuscript. It gives instructions on how to compute multivariate information theory metrics, analyse them in the context of uniform hypergraphs, and visualize them. A consequence of our work is that multiple pairwise network metric can be readly extended and computed in uniform hypergraphs. Here, among multiple high-order network metrics, we focused on eigenvector centralities, which allow us to quantify high-order hubs in our work.  
 
 ## Introduction
 
-The human brain's ability to form complex networks and functional hubs is a subject of immense research interest. In our manuscript, after building uniform hypergraphs using multivariate information theory metrics, we delve into the emergence of higher-order functional hubs, exploring their significance and potential implications in a clinical context. This repository is a comprehensive guide, providing the necessary tools and code to replicate our analyses and further explore the intricacies of high-order functional brain networks.
+The human brain's ability to form complex networks and functional hubs is a subject of immense research interest. In our manuscript, after building uniform hypergraphs using multivariate information theory metrics, we delve into the emergence of higher-order functional hubs, exploring their significance and potential implications in a clinical context. This repository is a comprehensive guide, providing the necessary tools and code to replicate our analyses and further explore high-order functional brain networks, as well as its visualizations.
 
 ## Repository Structure
 
-- **CodeBlock1:** [Computation of high-order interdependencies using information theory](/CodeBlock1/Code%20Block%201%20-%20Computing%20High%20Order%20Interdependencies%20in%20HCP%20data.ipynb) .
+- **CodeBlock1:** [Computation of high-order interdependencies using information theory](/CodeBlock1/Code%20Block%201%20-%20Computing%20High%20Order%20Interdependencies%20in%20HCP%20data.ipynb).
 
-This codebook inputs any time series - in this case - we included an rs-fMRI time series and outputs a CSV file with multiple high-order connectivity metrics for all similarities metrics discussed in our manuscript. That said, the final output is a pandas DataFrame with five columns: One for each Multivariate Metric: Oinfo, Sinfo, Interaction Information (we call here a multivariate extension of Mutual Information), Total Correlation. The last column refer to the indexs of the computed triplets.  
+This codebook inputs any time series - in this case - we included an rs-fMRI time series and outputs a CSV file with multiple high-order connectivity metrics for multiple similarities metrics from multivariate information theory, as discussed in our manuscript. That said, the final output is a pandas DataFrame with five columns: One for each Multivariate Metric: Oinfo, Sinfo, Interaction Information (we call in our notebooks as mutual info, since it is a multivariate extension of Mutual Information), and Total Correlation. The last column refer to the indexs of the computed triplets.  
 
-To do so, scripts from [@GuillaumeGirier](https://github.com/GuillaumeGirier) and  [@pierrebaudot](https://github.com/pierrebaudot) [Infotopo](https://github.com/pierrebaudot/infotopopy) were included and adapted to this repository. See also [High-Order-interactions
+To do so, we merged scripts from [@GuillaumeGirier](https://github.com/GuillaumeGirier) and  [@pierrebaudot](https://github.com/pierrebaudot) [Infotopo](https://github.com/pierrebaudot/infotopopy) were included and adapted to this repository. See also [High-Order-interactions
 ](https://github.com/brincolab/High-Order-interactions) from and 
 [@KGatica](https://github.com/KGatica) and [@rcofre](https://github.com/rcofre), from which [@GuillaumeGirier](https://github.com/GuillaumeGirier) are translated to Python.
 
@@ -25,11 +25,13 @@ To do so, scripts from [@GuillaumeGirier](https://github.com/GuillaumeGirier) an
 
 Example scripts and explanations were provided for phase randomization of time series, which was used in our work to create surrogate data for our analysis. We applied phase randomization of each time series and computed the multivariate information metrics for each subject, which is stored in a different folder. Then, we compared, at the group level, the statistical distribution of the phase-randomized triplets vs the original ones.  We selected the significant hyperlinks whose weights do not belong to the phase randomized one.
 
-- **CodeBlock3:** [Analyzing real vs. random triplets in a sample of 100 individuals](CodeBlock3/Hyperedge_selection_real_vs_randomized_zscore.ipynb). 
+- **CodeBlock3:** [Analyzing real vs. random triplets in a sample of 100 individuals](/CodeBlock3/Code%20Block3%20-%20Hyperedge_selection_real_vs_randomized.ipynb). 
+ 
+Based in the computed high-order interdependencies, this notebook compares randomized and measured high-order interdependencies. Aslo, the notebook outputs include average CSV files for real and randomized data, where the High-order Hubs were computed. Multiple plots comparing phase randomized and measured triplets are shown for each multivariate interdependency metric. 
 
-Outputs include average CSV files for real and randomized data, where the High-order Hubs were computed.
+- **CodeBlock4:** [Network metrics computation and data visualization using provided Data vis code](/CodeBlock4/01_Computing%20and%20Visualizing%20High-Order%20Hubs_thresh001.ipynb).
 
-- **CodeBlock4:** [Network metrics computation and data visualization using provided Data vis code](Codeblock4/01_Computing and Visualizing High-Order Hubs_thresh001.md).
+
 
 The 3d data visualization of this material was developed based on the [@network_TDA_tutorial](https://github.com/multinetlab-amsterdam/network_TDA_tutorial) developed at [@multinetlab-amsterdam](https://github.com/multinetlab-amsterdam) by [@eduardacenteno](https://github.com/eduardacenteno) and [myself](https://github.com/fnobregasantos).
 

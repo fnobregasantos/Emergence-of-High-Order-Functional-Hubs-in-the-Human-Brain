@@ -4,6 +4,17 @@ import ast
 import networkx as nx
 from scipy.stats import zscore
 
+
+# This code performs an analysis of hypergraphs constructed from high-order interdependencies (HOI) data,
+# focusing on computing various centrality measures and comparing them to a random baseline. 
+# The process starts by loading average HOI values from both empirical and randomized datasets. 
+# It then constructs hypergraphs by selecting a subset of triplets, either based on their redundancy or synergy. 
+# Centrality measures—specifically, eigenvector centrality, betweenness centrality, and degree centrality—are computed for these hypergraphs. 
+# The code further runs a parallelized process to generate and compute these centralities across multiple randomized hypergraphs,
+# aggregates the results, and determines significance thresholds for each centrality measure. 
+# Finally, the results are saved and the significance thresholds are printed, 
+# providing insight into the network structure and its deviation from randomness
+
 #Openining the two files witht the average HOI values
 path='Average_Data/average_triplets.csv'
 path_random='Average_Data/average_triplets_random.csv'
@@ -19,7 +30,7 @@ import pandas as pd
 import ast
 import random
 
-fraction=0.01
+fraction=0.005
 max_workers=10
 
 def create_hypergraph(dataframe, sort_column='Mut Info_normalized', mode='redundancy', random_selection=False):
@@ -152,7 +163,7 @@ def main():
     aggregated_centralities = aggregate_centrality_dataframes(centralities_random_hypergraphs)
 
     # Save the aggregated centralities to a CSV file
-    aggregated_centralities.to_csv('aggregated_centralities'+str(num_random_hypergraphs)+'copies001fraction.csv', index=False)
+    aggregated_centralities.to_csv('aggregated_centralities'+str(num_random_hypergraphs)+'copies0005fraction.csv', index=False)
 
     
     # Determine the threshold for significance
