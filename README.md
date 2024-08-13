@@ -1,11 +1,11 @@
 
-# Emergence of Higher Order Functional Hubs in the Human Brain
+# Emergence of High-Order Functional Hubs in the Human Brain
 
 <p align="center">
   <img src="Images/II_Hub_video.gif" alt="Emergence of Higher Order Functional Hubs">
 </p>
 
-This repository contains supporting materials and code for the manuscript entitled "Emergence of Higher Order Functional Hubs in the Human Brain," submitted to bioarxiv in https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1. The primary goal of this repository is to demonstrate the computational methods used to analyze high-order dependencies in functional brain networks using multivariate information theory, focusing on resting-state fMRI data, as in our manuscript. It gives instructions on how to compute multivariate information theory metrics, analyse them in the context of uniform hypergraphs, and visualize them. A consequence of our work is that multiple pairwise network metric can be readly extended and computed in uniform hypergraphs. Here, among multiple high-order network metrics, we focused on eigenvector centralities, which allow us to quantify high-order hubs in our work.  
+This repository contains supporting materials and code for the manuscript entitled "Emergence of High-Order Functional Hubs in the Human Brain," submitted to bioarxiv in https://www.biorxiv.org/content/10.1101/2023.02.10.528083v1. The primary goal of this repository is to demonstrate the computational methods used to analyze high-order dependencies in functional brain networks using multivariate information theory, focusing on resting-state fMRI data, as in our manuscript. It gives instructions on how to compute multivariate information theory metrics, analyse them in the context of uniform hypergraphs, and visualize them. A consequence of our work is that multiple pairwise network metric can be readly extended and computed in uniform hypergraphs. Here, among multiple high-order network metrics, we focused on eigenvector centralities, which allow us to quantify high-order hubs in our work.  
 
 ## Introduction
 
