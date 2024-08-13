@@ -37,22 +37,16 @@ Based in the computed high-order interdependencies, this notebook compares rando
 
 The 3d data visualization of this material was developed based on the [@network_TDA_tutorial](https://github.com/multinetlab-amsterdam/network_TDA_tutorial) developed at [@multinetlab-amsterdam](https://github.com/multinetlab-amsterdam) by [@eduardacenteno](https://github.com/eduardacenteno) and [myself](https://github.com/fnobregasantos).
 
-**CodeBlock5:** [Pairwise network analysis and comparison with high-order hubs](/CodeBlock5/Pairwise%20Analysis.ipynb).
+- **CodeBlock5:** [Pairwise network analysis and comparison with high-order hubs](/CodeBlock5/Pairwise%20Analysis.ipynb).
 
   This code block performs a pairwise analysis of different network centralities using the same dataset as the high-order analysis. We selected a significance level of \(p = 0.05\) for the links, based on the correlation between time series of rs-fMRI BOLD activity, to construct the pairwise connectivity matrix. In this analysis, we computed hubs based on Eigenvector Centrality (EC), Degree Centrality (DC), and Betweenness Centrality (BC). Comparing the results, we observed that only visual areas emerged as hubs in the pairwise analysis, whereas the high-order analysis also identified motor areas as hubs. The high-order analysis provides a clearer and more structured identification of hubs, highlighting specific triangles sharing common areas. Detailed results and further analysis on centralities can be found in this code block.
 
 
-- ### CodeBlock6: High-Order Hubs and relationship with Behavioral and Anatomical Traits
-
-This codeblock includes an analysis of high-order triplet data in relation to behavioral and anatomical data from the HCP dataset. Given the restriction for publicating clinical data, the results are presented in an interactive HTML file.
-
-[View the HTML report](CodeBlock6/Triplet_vs_traits_analysis.md)
+- **CodeBlock6:** High-Order Hubs and relationship with Behavioral and Anatomical Traits This codeblock includes an analysis of high-order triplet data in relation to behavioral and anatomical data from the HCP dataset. **Behavoral and Anatomical HCP Data Privacy:** Given the restriction for publicating clinical data, the results are presented in a markdown file with the python code, with identical results, but no access to individual behavoral and anatomic data. [View the HTML report](CodeBlock6/Triplet_vs_traits_analysis.md)
 
 Each folder contains detailed instructions and scripts necessary for the respective analyses.
 
-#### Behavoral and Anatomical HCP Data Privacy
 
-In compliance with the privacy rules of the Human Connectome Project, we cannot publish the individual behavoral and anatomical data. Therefore, we only provided a markdown code with our analysis.
 
 ## Visualization of High-Order Hubs
 
@@ -61,9 +55,9 @@ The potential visualizations of high-order hubs are extensive, encompassing a wi
 For those interested in exploring the full set of high-order networks, detailed instructions on how to generate and visualize all possible high-order hubs can be found in **CodeBlock4** of this repository. This codeblock includes comprehensive guidance on plotting these networks, enabling further exploration of the rich connectivity patterns uncovered in our analysis.
 
 
-# Redundant Hypergraphs:
+### Redundant Hypergraphs:
 
-## Interaction Information
+#### Interaction Information
 
 * Hypergraph - animation with 240 frames with the corresponding strongest interaction information as hyperlinks in a hypergraph.
 
@@ -77,7 +71,7 @@ For those interested in exploring the full set of high-order networks, detailed 
   <img src="Images/rHubMI_d.gif" alt="High-order Hub Interaction Information">
 </p>
 
-## Total Correlation
+#### Total Correlation
 
 * Hypergraph animation with 240 frames with the corresponding strongest total correlation as hyperlinks in a hypergraph.
 
@@ -91,9 +85,9 @@ For those interested in exploring the full set of high-order networks, detailed 
   <img src="Images/rHubTC_d.gif" alt="High-order Hub Total Correlation">
 </p>
 
-# Synergistic Hypergraphs:
+### Synergistic Hypergraphs:
 
-## Interaction Information
+#### Interaction Information
 
 * Hypergraph
 
@@ -101,8 +95,8 @@ For those interested in exploring the full set of high-order networks, detailed 
   <img src="/Images/sMI_d.gif" alt="Hypergraph Synergistic Interaction Information">
 </p>
 
-## Additional Images
-Size constraints prevent us to include other images, but a full guideline on how to visualize higpergraph is on CodeBlock4. 
+### Additional Animations
+Due to size constraints, we are unable to include all possible animations in this repository. However, detailed guidelines on how to visualize an extensive set of hypergraphs can be found in CodeBlock4. 
 
 ## Usage and Requirements
 
