@@ -29,7 +29,7 @@ Example scripts and explanations were provided for phase randomization of time s
 
 Outputs include average CSV files for real and randomized data, where the High-order Hubs were computed.
 
-- **CodeBlock4:** [Network metrics computation and data visualization using provided Data vis code](Codeblock4/Computing%20and%20Visualizing%20High-Order%20Hubs.ipynb).
+- **CodeBlock4:** [Network metrics computation and data visualization using provided Data vis code](Codeblock4/01_Computing and Visualizing High-Order Hubs_thresh001.md).
 
 The 3d data visualization of this material was developed based on the [@network_TDA_tutorial](https://github.com/multinetlab-amsterdam/network_TDA_tutorial) developed at [@multinetlab-amsterdam](https://github.com/multinetlab-amsterdam) by [@eduardacenteno](https://github.com/eduardacenteno) and [myself](https://github.com/fnobregasantos).
 
