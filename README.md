@@ -31,7 +31,7 @@ Example scripts and explanations were provided for phase randomization of time s
  
 Based in the computed high-order interdependencies, this notebook compares randomized and measured high-order interdependencies. Aslo, the notebook outputs include average CSV files for real and randomized data, where the High-order Hubs were computed. Multiple plots comparing phase randomized and measured triplets are shown for each multivariate interdependency metric. 
 
-- **CodeBlock4:** [Network metrics computation and data visualization using provided Data vis code](/CodeBlock4/01_Computing%20and%20Visualizing%20High-Order%20Hubs_thresh001.ipynb).
+- **CodeBlock4:** [Network metrics computation and data visualization using provided Data vis code](/CodeBlock4/01_Computing%20and%20Visualizing%20High-Order%20Hubs_sig0005.ipynb).
 
 
 
